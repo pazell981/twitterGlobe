@@ -1,0 +1,9 @@
+branch-defaults:
+  default:
+    environment: twitterglobe-env
+global:
+  application_name: twitterGlobe
+  default_ec2_keyname: aws-eb
+  default_platform: 64bit Amazon Linux 2014.09 v1.0.9 running Node.js
+  default_region: us-west-1
+  profile: eb-cli

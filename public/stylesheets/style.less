@@ -1,0 +1,178 @@
+@primary: #00a5ff;
+@secondary: #4c4c4c;
+@third: #878787;
+@border: #2a2a24;
+@black: #000000;
+@white: #ffffff;
+@danger: #b30000;
+@lato: 'Lato', sans-serif;
+@orbitron: 'Orbitron', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Orbitron:700);
+*{
+	margin: 0;
+	padding: 0;
+  font-family: @lato;
+}
+body {
+  overflow: none;
+}
+a {
+  color: @primary;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: @orbitron;
+}
+input[type="text"]{
+	color: @black;
+	display: block;
+	width: 100%;
+	margin-top: 1vh;
+}
+.transform{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+	-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+	transform: translate(-50%, -50%);
+}
+.button{
+	position: absolute;
+	bottom: 25vh;
+	padding: 1.75vh .75vw;
+	z-index: 4;
+	cursor: pointer;
+	height: 5vh;
+	width: 10vw;
+	border: 2px outset @border;
+}
+.buttontext{
+	font-family: @orbitron;
+	font-size: 1.5vh;
+	color: @white;
+	text-align: center;
+	.transform;
+}
+.center{
+	position: relative;
+	margin: 0 auto;
+	width: 66vw;
+}
+.land{
+	stroke: @primary;
+	fill: linear-gradient(to bottom, #333333 0%,#444444 12%,#555555 25%,#666666 39%,#777777 50%,#888888 51%,#777777 60%,#666666 76%,#555555 91%,#444444 100%);
+}
+.boundary{
+	color: @primary;
+}
+.interface_box{
+	padding: 3px;
+	border: 2px inset @border;
+	background-color: @secondary;
+	vertical-align: top;
+	font-size: 1.5vh;
+	color: @white;
+	overflow: scroll;
+}
+.points{
+	cursor: pointer;
+	z-index: 10;
+}
+.popover_tweet img{
+	display: inline-block;
+	vertical-align: top;
+	height: 50px;
+	width: 50px;
+	margin-right: 5px;
+}
+.tweet{
+	margin: 5px auto;
+	width: 95%;
+	.interface_box
+}
+.tweet_text{
+	display: inline-block;
+	width: 180px;
+}
+.user{
+	color: @primary;
+	font-weight: bold;
+}
+#cntry{
+	font-family: @orbitron;
+}
+#filter{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 25vh;
+	width: 75vw;
+	z-index: 3;
+	border: 4px outset @border;
+	background: linear-gradient(to bottom, #333333 0%,#444444 12%,#555555 25%,#666666 39%,#777777 50%,#888888 51%,#777777 60%,#666666 76%,#555555 91%,#444444 100%);
+}
+#filter .column{
+	display: inline-block;
+	width: 20vw;
+	height: 22vh;
+	padding: 1vh 1vw;
+	margin: 1vh .5vw;
+	.interface_box
+}
+#filter .column h5{
+	font-size: 2vh;
+	text-align: center;
+	padding: 0;
+	margin: 2px;
+}
+#rotation{
+	right: 35vw;
+	background-color: @black;
+	.button;
+}
+#starry{
+	background-color: @black;
+	z-index: 1;
+}
+#stream{
+	right:25vw;
+	background: @danger;
+	.button;
+}
+#title{
+	width: 55vw;
+	height: 5vh;
+	position: absolute;
+	left: 0;
+	bottom: 25vh;
+	border: 2px outset @border;
+	background-color: @secondary;
+	z-index: 4;
+	text-align: center;
+}
+#title h3{
+	margin: .5vh 0;
+	padding: 0;
+	color: @white;
+	font-size: 4vh;
+	vertical-align: middle;
+}
+#tweet_globe{
+	position: absolute;
+	height: 75vh;
+	width: 75vw;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+#tweets{
+	position: absolute;
+	overflow: scroll;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 25vw;
+	z-index: 3;
+	border: 4px outset @border;
+	background: @third;
+}

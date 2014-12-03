@@ -1,0 +1,43 @@
+{
+  "name": "twitterGlobe",
+  "author": "Paul Zellmer",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pazell981/twitterGlobe"
+  },
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.10.2",
+    "express-device": "*",
+    "ip": "^0.3.2",
+    "less-middleware": "^1.0.4",
+    "socket.io": "^1.2.1",
+    "twit": "^1.1.18"
+  },
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "connect-livereload": "~0.1.3",
+    "moment": "~2.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/pazell981/twitterGlobe/issues"
+  },
+  "homepage": "https://github.com/pazell981/twitterGlobe",
+  "description": "Twitter integration into d3js",
+  "keywords": [
+    "Twitter",
+    "Node",
+    "Express",
+    "Socket.io",
+    "d3js"
+  ]
+}
